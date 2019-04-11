@@ -1,0 +1,43 @@
+{
+    "name": "lao9s/modelmetabox",
+    "description": ":description",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dima Botezatu",
+            "email": "dima.botezatu@gmail.com",
+            "homepage": "https://www.linkedin.com/in/dima-botezatu-73ba3769/"
+        }
+    ],
+    "homepage": "https://github.com/lao9s/modelmetabox",
+    "keywords": ["Laravel", "ModelMetaBox"],
+    "require": {
+        "illuminate/support": "~5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~7.0",
+        "mockery/mockery": "^1.1",
+        "orchestra/testbench": "~3.0",
+        "sempro/phpunit-pretty-print": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "lao9s\\ModelMetaBox\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "lao9s\\ModelMetaBox\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "lao9s\\ModelMetaBox\\ModelMetaBoxServiceProvider"
+            ],
+            "aliases": {
+                "ModelMetaBox": "lao9s\\ModelMetaBox\\Facades\\ModelMetaBox"
+            }
+        }
+    }
+}
